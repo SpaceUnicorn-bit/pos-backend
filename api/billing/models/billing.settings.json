@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "billings",
+  "info": {
+    "name": "billing",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "orderId": {
+      "type": "string"
+    },
+    "purchaseValue": {
+      "type": "decimal"
+    },
+    "recipes": {
+      "collection": "recipe",
+      "via": "billings",
+      "dominant": true
+    },
+    "numTable": {
+      "type": "string"
+    },
+    "paid": {
+      "type": "boolean"
+    },
+    "office": {
+      "model": "office",
+      "via": "billings"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "office_products",
+  "info": {
+    "name": "office-product"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "office": {
+      "model": "office"
+    },
+    "stock": {
+      "type": "integer"
+    },
+    "product": {
+      "model": "product"
+    }
+  }
+}

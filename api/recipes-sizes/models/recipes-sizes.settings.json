@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recipes_sizes",
+  "info": {
+    "name": "recipes-sizes"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "prices": {
+      "type": "decimal"
+    },
+    "recipe": {
+      "model": "recipe"
+    },
+    "size": {
+      "model": "sizes"
+    }
+  }
+}

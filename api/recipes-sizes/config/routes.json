@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/recipes-sizes",
+      "handler": "recipes-sizes.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/recipes-sizes/count",
+      "handler": "recipes-sizes.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/recipes-sizes/:id",
+      "handler": "recipes-sizes.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/recipes-sizes",
+      "handler": "recipes-sizes.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/recipes-sizes/:id",
+      "handler": "recipes-sizes.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/recipes-sizes/:id",
+      "handler": "recipes-sizes.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

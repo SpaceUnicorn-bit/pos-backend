@@ -17,6 +17,11 @@
     "billings": {
       "via": "office",
       "collection": "billing"
+    },
+    "user": {
+      "via": "office",
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }

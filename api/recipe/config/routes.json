@@ -18,6 +18,14 @@
     },
     {
       "method": "GET",
+      "path": "/recipes/getJoinRecipe/:id",
+      "handler": "recipe.getJoinRecipe",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/recipes/:id",
       "handler": "recipe.findOne",
       "config": {

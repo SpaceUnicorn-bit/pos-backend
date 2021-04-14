@@ -18,9 +18,7 @@
       "type": "decimal"
     },
     "recipes": {
-      "collection": "recipe",
-      "via": "billings",
-      "dominant": true
+      "collection": "recipe"
     },
     "numTable": {
       "type": "string"
@@ -31,6 +29,9 @@
     "office": {
       "model": "office",
       "via": "billings"
+    },
+    "recipes_sizes": {
+      "collection": "recipes-sizes"
     }
   }
 }

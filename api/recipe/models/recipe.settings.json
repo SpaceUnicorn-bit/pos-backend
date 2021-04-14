@@ -22,10 +22,6 @@
       "collection": "product",
       "dominant": true
     },
-    "billings": {
-      "via": "recipes",
-      "collection": "billing"
-    },
     "price": {
       "type": "decimal"
     },
